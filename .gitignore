@@ -1,0 +1,6 @@
+# Project exclude paths
+/target/
+/firstapp.iml
+.idea/
+*.iml
+target/
