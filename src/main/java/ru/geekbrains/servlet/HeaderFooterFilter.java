@@ -22,7 +22,7 @@ public class HeaderFooterFilter implements Filter {
         chain.doFilter(req, resp);
 
         filterConfig.getServletContext().
-                getRequestDispatcher( "/footer.html").include(req, resp);
+                getRequestDispatcher("/footer.html").include(req, resp);
     }
 
     @Override

@@ -13,8 +13,7 @@ import java.io.IOException;
 
 @WebServlet(name = "CookieServlet", urlPatterns = "/cookies_servlet")
 public class CookieServlet extends HttpServlet {
-
-    private static Logger logger = LoggerFactory.getLogger(CookieServlet.class);
+    private static final Logger logger = LoggerFactory.getLogger(CookieServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

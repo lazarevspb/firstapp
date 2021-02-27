@@ -9,10 +9,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+
 @WebServlet(name = "FirstServlet", urlPatterns = "/first_servlet")
 public class FirstServlet extends HttpServlet {
 
-    private static Logger logger = LoggerFactory.getLogger(FirstServlet.class);
+    private static final Logger logger = LoggerFactory.getLogger(FirstServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -26,7 +27,6 @@ public class FirstServlet extends HttpServlet {
         // обратите внимание, что здесь указывается имя сервлета
         getServletContext().getRequestDispatcher("/index.html")
                 .forward(req, resp);
-
 
 
     }
